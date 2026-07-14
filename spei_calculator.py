@@ -6,7 +6,7 @@ import spei as si
 import scipy.stats as sps
 
 # Directories
-WORKSPACE = r"c:\Users\snarvaez\OneDrive - Corporación Autónoma Regional del Atlántico CRA\Escritorio\desarrollos\cra risk management\temporal-spei-monitor"
+WORKSPACE = os.path.abspath(os.path.dirname(__file__))
 DATA_DIR = os.path.join(WORKSPACE, "data")
 CACHED_CHIRPS_PATH = os.path.join(DATA_DIR, "cached_chirps.csv")
 COMPLETED_PET_PATH = os.path.join(DATA_DIR, "completed_pet.csv")

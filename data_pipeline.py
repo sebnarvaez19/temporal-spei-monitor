@@ -10,7 +10,7 @@ import numpy as np
 from shapely.geometry import Point, shape
 
 # Directories
-WORKSPACE = r"c:\Users\snarvaez\OneDrive - Corporación Autónoma Regional del Atlántico CRA\Escritorio\desarrollos\cra risk management\temporal-spei-monitor"
+WORKSPACE = os.path.abspath(os.path.dirname(__file__))
 DATA_DIR = os.path.join(WORKSPACE, "data")
 BASINS_DIR = os.path.join(DATA_DIR, "basins")
 GEOJSON_PATH = os.path.join(BASINS_DIR, "basins.geojson")
